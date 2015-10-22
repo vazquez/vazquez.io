@@ -10,12 +10,15 @@
 
 html {
   color: #222;
-  font-weight: 100;
-  font-size: 1em; /* ~16px; */
+  font-weight: var(--font-medium);
+  font-size: 10px; /* 1rem; */
   font-family: var(--font-family-base);
   line-height: 1.375; /* ~22px */
 }
 
+body {
+  font-size: 1.6rem;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301

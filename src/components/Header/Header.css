@@ -9,12 +9,11 @@
 .Header {
   background: #373277;
   color: #fff;
-}
-
-.Header-container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: var(--max-content-width);
+  .Header-container {
+    margin: 0 auto;
+    padding: 20px 0;
+    max-width: var(--max-content-width);
+  }
 }
 
 .Header-brand {
@@ -28,7 +27,7 @@
 }
 
 .Header-nav {
-  float: right;
+  float: left;
   margin-top: 6px;
 }
 
