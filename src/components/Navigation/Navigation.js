@@ -15,7 +15,7 @@ class Navigation extends Component {
 
   render() {
     return (
-      <div className={classNames(this.props.className, 'Navigation container-fluid')} role="navigation">
+      <div className={classNames(this.props.className, 'Navigation')} role="navigation">
         <a className="Navigation-link" href="/about" onClick={Link.handleClick}>About</a>
         <a className="Navigation-link" href="/projects" onClick={Link.handleClick}>Projects</a>
         <a className="Navigation-link" href="http://medium.com/@iamrvazquez" target="_" onClick={Link.handleClick}>Blog</a>

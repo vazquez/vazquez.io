@@ -12,7 +12,7 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <div className="Header-container">
+        <div className="Header-container container">
           <Navigation className="Header-nav" />
           <a className="Header-brand" href="/" onClick={Link.handleClick}>
             <img className="Header-brandImg" src={require('./logo-small.png')} width="38" height="38" alt="React" />
