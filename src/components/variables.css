@@ -1,6 +1,22 @@
 /* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
-@import url(https://fonts.googleapis.com/css?family=Hind:600,500,300);
+/*@import url(https://fonts.googleapis.com/css?family=Hind:600,500,300);*/
+
+@font-face {
+  font-family: 'Hind300';
+  src: url('../../public/fonts/Hind-Light.woff') format('woff');
+
+}
+
+@font-face {
+  font-family: 'Hind500';
+  src: url('../../public/fonts/Hind-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Hind600';
+  src: url('../../public/fonts/Hind-Semibold.woff') format('woff');
+}
 
 :root {
 
@@ -19,7 +35,8 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base: 'Hind', 'HelveticaNeue-Light', sans-serif;
+  /*--font-family-base: 'Hind', 'HelveticaNeue-Light', sans-serif;*/
+  --font-family-base: 'Hind500';
   --font-light: 300;
   --font-medium: 500;
   --font-semibold: 600;
