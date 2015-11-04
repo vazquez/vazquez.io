@@ -21,11 +21,11 @@ class ContentPage extends Component {
     this.context.onSetTitle(this.props.title);
     return (
       <div className="ContentPage">
-        <div className="ContentPage-container">
+        <div className="container">
           {
             this.props.path === '/' ? null : <h1>{this.props.title}</h1>
           }
-          <div dangerouslySetInnerHTML={{__html: this.props.content || ''}} />
+          <div dangerouslySetInnerHTML={{__html: this.props.content || 'No content has been added.'}} />
         </div>
       </div>
     );
