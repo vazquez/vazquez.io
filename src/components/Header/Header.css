@@ -7,6 +7,17 @@
 }
 
 .Header {
+  ::-moz-selection {
+    background: white;
+    color: var(--blue);
+  }
+  ::selection {
+    background: snow;
+    color: var(--blue);
+  }
+}
+
+.Header {
   position: relative;
   background: var(--blue);
   color: #fff;
@@ -21,6 +32,7 @@
   float: right;
   img {
     transform: scale(1);
+    user-select: none;
     &:hover {
       animation: pop 0.2s ease;
     }

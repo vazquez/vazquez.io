@@ -31,6 +31,7 @@
   --gray-light:            color(black lightness(+46.7%)); /* #777 */
   --gray-lighter:          color(black lightness(+93.5%)); /* #eee */
   --blue:                  #1572FF;
+  --yellow:                #FFE699;
 
   /*
    * Typography
@@ -38,6 +39,8 @@
 
   /*--font-family-base: 'Hind', 'HelveticaNeue-Light', sans-serif;*/
   --font-family-base: 'Hind500';
+  --font-family-light: 'Hind300';
+  --font-family-semibold: 'Hind600';
   --font-light: 300;
   --font-medium: 500;
   --font-semibold: 600;
@@ -63,4 +66,22 @@
 
   --animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;
 
+}
+
+/* TYPOGRAPHY */
+
+h2 {
+  color: var(--blue);
+  font-size: 3.8rem;
+  margin: 5rem 0 1rem 0;
+}
+
+::-moz-selection {
+  background: var(--yellow);
+  color: #9F7B0D;
+}
+
+::selection {
+  background: var(--yellow);
+  color: #9F7B0D;
 }

@@ -10,7 +10,7 @@
  * ========================================================================== */
 
 html {
-  color: #222;
+  color: #586477;
   font-weight: var(--font-medium);
   font-size: 10px; /* 1rem; */
   font-family: var(--font-family-base);
@@ -28,15 +28,26 @@ body {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
+ ::-moz-selection {
+   background: var(--yellow);
+   color: #9F7B0D;
+ }
+
+ ::selection {
+   background: var(--yellow);
+   color: #9F7B0D;
+ }
+
+/*
+* Typography
+*/
+
+h2 {
+ color: var(--blue);
+ font-size: 3.8rem;
+ margin: 5rem 0 1rem 0;
 }
 
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
 /*
  * A better looking default horizontal rule
