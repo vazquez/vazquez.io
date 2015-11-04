@@ -12,16 +12,22 @@ class Header extends Component {
   render() {
     return (
       <div className="Header">
-        <div className="Header-container container">
+        <div className="container">
           <Navigation className="Header-nav" />
           <a className="Header-brand" href="/" onClick={Link.handleClick}>
-            <img className="Header-brandImg" src={require('./logo-small.png')} width="38" height="38" alt="React" />
-            <span className="Header-brandTxt">Your Company</span>
+            <img src={require('./logo-small.svg')} width="36" height="36" alt="Ricardo Vazquez" />
           </a>
-          <div className="Header-banner">
-            <h1 className="Header-bannerTitle">React</h1>
-            <p className="Header-bannerDesc">Complex web apps made easy</p>
-          </div>
+          <section className="Header-banner">
+            <article>
+              <img src={require('./ricardo.svg')} width="145" height="199" alt="The Portrait of Ricardo Vazquez"/>
+            </article>
+            <article>
+              <h1>I'm Ricardo Vazquez</h1>
+              <p> I'm a Product Designer in Toronto.</p>
+              <p>My latest project is <a href="#" onClick={Link.handleClick}>Mozilla Webmaker Android</a>.</p>
+              <p>My latest thoughts are <a href="#" onClick={Link.handleClick}>My First Year at Mozilla</a>.</p>
+            </article>
+          </section>
         </div>
       </div>
     );
