@@ -3,6 +3,7 @@
 import React, { PropTypes, Component } from 'react';
 import styles from './ContentPage.css';
 import withStyles from '../../decorators/withStyles';
+import Contact from '../Contact';
 
 @withStyles(styles)
 class ContentPage extends Component {
@@ -27,6 +28,7 @@ class ContentPage extends Component {
           }
           <div dangerouslySetInnerHTML={{__html: this.props.content || 'No content has been added.'}} />
         </div>
+        <Contact />
       </div>
     );
   }
