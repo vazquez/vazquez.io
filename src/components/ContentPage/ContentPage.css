@@ -27,12 +27,18 @@
       position: relative;
       color: inherit;
       text-decoration: none;
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
       &:before {
         position: absolute;
-        content: '\400';
-        top: 0.3rem;
-        right: -1.6rem;
+        font-family: 'Ionicons';
+        content: '\f39c';
+        top: 0.1rem;
+        right: -1.8rem;
         color: var(--blue);
+      }
+      &:hover{
+        opacity: 0.8;
       }
     }
     &:nth-child(1) {
