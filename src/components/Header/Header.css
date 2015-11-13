@@ -23,6 +23,20 @@
   color: #fff;
   padding: 20px 0;
   height: 99vh;
+  &:before {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -3.5rem;
+    width: 110%;
+    height: 8.6rem;
+    background: white;
+    /*animation-name: tiltHeader;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;*/
+    animation: tiltHeader 1s ease forwards;
+  }
 }
 
 .Header-brand {
@@ -51,7 +65,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
-  bottom: 8rem;
+  bottom: 10rem;
   clear: both;
   text-align: left;
   article {
@@ -80,6 +94,15 @@
         }
       }
     }
+  }
+}
+
+@keyframes tiltHeader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-3deg);
   }
 }
 
