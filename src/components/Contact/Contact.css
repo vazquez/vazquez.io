@@ -3,6 +3,21 @@
 @import '../variables.css';
 
 .Contact {
+  margin-top: 6rem;
+  padding-top: 1rem;
+  position: relative;
+  background: #F8F8F8;
+  overflow: hidden;
+  &:before {
+    position: absolute;
+    top: -2rem;
+    display: block;
+    content: '';
+    width: 120%;
+    height: 6rem;
+    background: white;
+    transform: rotate(2deg);
+  }
   form {
     margin-top: -9rem;
     label {

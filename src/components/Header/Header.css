@@ -23,6 +23,7 @@
   color: #fff;
   padding: 20px 0;
   height: 99vh;
+  overflow: hidden;
   &:before {
     position: absolute;
     display: block;
@@ -35,7 +36,9 @@
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-duration: 0.4s;*/
-    animation: tiltHeader 1s ease forwards;
+    /*animation: tiltHeader 1s cubic-bezier(.77, 0, .175, 1) forwards;*/
+    animation: tiltHeader 1s cubic-bezier(.77, 0, .175, 1) forwards;
+    animation-delay: 1s;
   }
 }
 
