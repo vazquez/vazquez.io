@@ -2,6 +2,8 @@
 
 /*@import url(https://fonts.googleapis.com/css?family=Hind:600,500,300);*/
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
 @font-face {
   font-family: 'Hind300';
   src: url('../../public/fonts/Hind-Light.woff') format('woff');
@@ -38,7 +40,7 @@
   /*
    * Typography
    * ======================================================================== */
-
+  --font-family-open-sans: 'Open Sans', 'HelveticaNeue-Light', sans-serif;
   /*--font-family-base: 'Hind', 'HelveticaNeue-Light', sans-serif;*/
   --font-family-base: 'Hind500';
   --font-family-light: 'Hind300';
