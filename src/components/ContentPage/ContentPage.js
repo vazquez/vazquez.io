@@ -28,7 +28,6 @@ class ContentPage extends Component {
           }
           <div dangerouslySetInnerHTML={{__html: this.props.content || 'No content has been added.'}} />
         </div>
-        <Contact />
       </div>
     );
   }

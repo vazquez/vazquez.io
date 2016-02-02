@@ -51,6 +51,14 @@ h2 {
  font-family: var(--font-family-semibold);
 }
 
+h4 {
+ color: var(--blue);
+ font-size: 1.6rem;
+ margin: 2rem 0 0rem 0;
+ letter-spacing: -0.1rem;
+ text-transform: uppercase;
+ /*border-bottom: 2px solid var(--blue);*/
+}
 
 /*
  * A better looking default horizontal rule
@@ -60,8 +68,8 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
+  border-top: 1px solid var(--blue);
+  margin:  0 0 1rem 0;
   padding: 0;
 }
 

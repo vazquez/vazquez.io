@@ -7,6 +7,23 @@
     font-size: 2.2rem;
     margin-top: 1rem;
   }
+  header {
+    h2{
+      margin-bottom: 0.5rem;
+      line-height: 3rem;
+      text-transform: uppercase;
+
+    }
+    p {
+      margin: 0;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      letter-spacing: -0.07rem;
+      text-transform: uppercase;
+      font-family: var(--font-family-semibold);
+      color: rgba(30, 38, 51, 0.3);
+    }
+  }
   .content p:last-child {
     margin-bottom: 0;
   }
@@ -22,6 +39,10 @@
       margin: 0;
       text-transform: capitalize;
       font-size: inherit;
+      &.info {
+        text-transform: none;
+        margin-top: 5rem;
+      }
     }
     a {
       position: relative;
@@ -80,6 +101,25 @@
       &:hover {
         filter: grayscale(90%);
         transform: scale(1.05);
+      }
+    }
+  }
+  .divider {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 34%;
+    opacity: 0.2;
+  }
+  img {
+    max-width: 100%;
+    margin-bottom: 4rem;
+    &.bordered {
+      border: 1px solid rgba(110, 133, 145, 0.4);
+    }
+    &.out-there{
+      max-width: 132%;
+      @media screen and (max-width: 1199px) {
+        max-width: 100%;
       }
     }
   }
