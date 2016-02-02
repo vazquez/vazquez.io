@@ -22,7 +22,7 @@
   background: var(--blue);
   color: #fff;
   padding: 20px 0;
-  height: 99vh;
+  height: 60vh;
   overflow: hidden;
   &:before {
     position: absolute;
@@ -46,16 +46,28 @@
   /*color: color(var(--brand-color) lightness(+10%));*/
   text-decoration: none;
   font-size: 1.75rem; /* ~28px */
-  float: right;
+  clear: both;
   img {
     transform: scale(1);
     user-select: none;
+    float: left;
     &:hover {
       animation: pop 0.2s ease;
     }
   }
 }
 
+.masthead {
+  float: right;
+  margin: 5px 0 0 0;
+  font-size: 1.8rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  em {
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+  }
+}
 
 .Header-nav {
   float: left;

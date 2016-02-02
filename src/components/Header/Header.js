@@ -13,10 +13,11 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="container">
-          <Navigation className="Header-nav" />
+          {/* <Navigation className="Header-nav" /> */}
           <a className="Header-brand" href="/" onClick={Link.handleClick}>
             <img src={require('./logo-small.svg')} width="36" height="36" alt="Ricardo Vazquez" />
           </a>
+          <h5 className="masthead">Ricardo Vazquez <em>Portfolio</em></h5>
           <section className="Header-banner">
             <article>
               <img src={require('./ricardo.svg')} width="145" height="199" alt="The Portrait of Ricardo Vazquez"/>
