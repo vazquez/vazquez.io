@@ -20,7 +20,11 @@ class Header extends Component {
           <h5 className="masthead">Ricardo Vazquez <em>Portfolio</em></h5>
           <section className="Header-banner">
             <article>
-              <img src={require('./ricardo.svg')} width="145" height="199" alt="The Portrait of Ricardo Vazquez"/>
+              <img src={require('./ricardo-no-eyes.svg')} width="145" height="199" alt="The Portrait of Ricardo Vazquez"/>
+              <div className="eyes">
+                <div className="eye left"></div>
+                <div className="eye right"></div>
+              </div>
             </article>
             <article>
               <h1>I'm Ricardo Vazquez</h1>
