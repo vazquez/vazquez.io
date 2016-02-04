@@ -22,8 +22,12 @@
   background: var(--blue);
   color: #fff;
   padding: 20px 0;
-  height: 60vh;
+  height: 90vh;
+  min-height: 380px;
   overflow: hidden;
+  @media screen and (min-width: 992px) {
+    height: 60vh
+  }
   &:before {
     position: absolute;
     display: block;
@@ -76,15 +80,21 @@
 
 .Header-banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
   bottom: 10rem;
   clear: both;
   text-align: left;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+  }
   article {
-    align-self: flex-end;
+    align-self: flex-start;
+    @media screen and (min-width: 992px) {
+      align-self: flex-end;
+    }
     &:nth-child(1){
       margin: 0 3rem 0 0;
     }

@@ -21,7 +21,7 @@
       letter-spacing: -0.07rem;
       text-transform: uppercase;
       font-family: var(--font-family-semibold);
-      color: rgba(30, 38, 51, 0.3);
+      color: rgba(86, 103, 131, 0.3);
     }
   }
   .content p:last-child {
@@ -65,6 +65,13 @@
       }
       &:hover{
         opacity: 0.8;
+      }
+      &.inline-link {
+        text-decoration: underline;
+        color: var(--blue);
+        &:before {
+          content: '';
+        }
       }
     }
     &:nth-child(1) {
@@ -126,6 +133,9 @@
       @media screen and (max-width: 1199px) {
         max-width: 100%;
       }
+    }
+    &.size-117{
+      max-width: 117%;
     }
   }
 }

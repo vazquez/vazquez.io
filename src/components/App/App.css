@@ -55,7 +55,7 @@ h4 {
  color: var(--blue);
  font-size: 1.6rem;
  margin: 2rem 0 0rem 0;
- letter-spacing: -0.1rem;
+ letter-spacing: -0.01rem;
  text-transform: uppercase;
  /*border-bottom: 2px solid var(--blue);*/
 }
