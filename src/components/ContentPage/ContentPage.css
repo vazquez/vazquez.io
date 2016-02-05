@@ -8,7 +8,7 @@
     margin-top: 1rem;
   }
   header {
-    h2{
+    h2 {
       margin-bottom: 0.5rem;
       line-height: 3rem;
       text-transform: uppercase;
@@ -122,11 +122,23 @@
     width: 34%;
     opacity: 0.2;
   }
+  img::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    /*content: attr(alt);*/
+    content: 'hello';
+  }
   img {
+    position: relative;
     max-width: 100%;
     margin-bottom: 4rem;
     &.bordered {
       border: 1px solid rgba(110, 133, 145, 0.4);
+    }
+    &.retina {
+      max-width: 45%;
     }
     &.out-there{
       max-width: 132%;
@@ -136,6 +148,9 @@
     }
     &.size-117{
       max-width: 117%;
+    }
+    &.m-right-6 {
+      margin-right: 6rem;
     }
   }
 }
