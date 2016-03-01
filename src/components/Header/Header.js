@@ -29,8 +29,8 @@ class Header extends Component {
             <article>
               <h1>I'm Ricardo Vazquez</h1>
               <p> I'm a Product Designer in Toronto.</p>
-              <p>My latest project is <a href="#" onClick={Link.handleClick}>Mozilla Webmaker Android</a>.</p>
-              <p>My latest thoughts are <a href="#" onClick={Link.handleClick}>My First Year at Mozilla</a>.</p>
+              <p>My latest project is <a href="#webmaker">Mozilla Webmaker Android</a>.</p>
+              <p>My latest thoughts are <a href="https://medium.com/@iamrvazquez/the-here-and-there-a-spatial-conceptual-model-for-ux-760708c02c00#.bl1xcti2t" target="_blank">A Spatial Conceptual Model for UX</a>.</p>
             </article>
           </section>
         </div>
