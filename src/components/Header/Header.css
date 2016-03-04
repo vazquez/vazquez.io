@@ -103,6 +103,7 @@
       line-height: 6rem;
       font-weight: var(--font-semibold);
       margin-bottom: 1rem;
+      letter-spacing: -0.15rem;
     }
     p {
       font-family: var(--font-family-open-sans);
