@@ -22,7 +22,7 @@
   background: var(--blue);
   color: #fff;
   padding: 20px 0;
-  height: 90vh;
+  height: 100vh;
   min-height: 380px;
   overflow: hidden;
   @media screen and (min-width: 992px) {
@@ -99,19 +99,27 @@
       margin: 0 3rem 0 0;
     }
     h1 {
-      font-size: 6rem;
-      line-height: 6rem;
+      font-size: 3.8rem;
+      list-style: 3.8rem;
       font-weight: var(--font-semibold);
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
       letter-spacing: -0.15rem;
+      @media screen and (min-width: 992px) {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 1rem;
+      }
     }
     p {
       font-family: var(--font-family-open-sans);
       font-weight: 400;
       margin: 0;
-      font-size: 2.3rem;
+      font-size: 2rem;
       color: rgba(255, 255, 255, .8);
       letter-spacing: -0.02rem;
+      @media screen and (min-width: 992px) {
+        font-size: 2.2rem;
+      }
       a {
         font-weight: 600;
         font-family: inherit;

@@ -148,6 +148,9 @@
     }
     &.size-117{
       max-width: 117%;
+      @media screen and (max-width: 1199px) {
+        max-width: 100%;
+      }
     }
     &.m-right-6 {
       margin-right: 6rem;
