@@ -150,7 +150,7 @@
       right: 38px;
       animation: blink 1500ms;
       animation-delay: 1500ms;
-      animation-iteration-count: 2;
+      animation-iteration-count: 10;
       animation-timing-function: ease-in-out;
     }
 
