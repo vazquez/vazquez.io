@@ -141,7 +141,7 @@
       max-width: 45%;
     }
     &.out-there{
-      max-width: 132%;
+      max-width: 116%;
       @media screen and (max-width: 1199px) {
         max-width: 100%;
       }
