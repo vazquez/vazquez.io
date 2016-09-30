@@ -22,8 +22,12 @@
   background: var(--blue);
   color: #fff;
   padding: 20px 0;
-  height: 99vh;
+  height: 100vh;
+  min-height: 380px;
   overflow: hidden;
+  @media screen and (min-width: 992px) {
+    height: 60vh
+  }
   &:before {
     position: absolute;
     display: block;
@@ -46,16 +50,28 @@
   /*color: color(var(--brand-color) lightness(+10%));*/
   text-decoration: none;
   font-size: 1.75rem; /* ~28px */
-  float: right;
+  clear: both;
   img {
     transform: scale(1);
     user-select: none;
+    float: left;
     &:hover {
       animation: pop 0.2s ease;
     }
   }
 }
 
+.masthead {
+  float: right;
+  margin: 5px 0 0 0;
+  font-size: 1.8rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  em {
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+  }
+}
 
 .Header-nav {
   float: left;
@@ -64,31 +80,46 @@
 
 .Header-banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   position: absolute;
   bottom: 10rem;
   clear: both;
   text-align: left;
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+  }
   article {
-    align-self: flex-end;
+    align-self: flex-start;
+    @media screen and (min-width: 992px) {
+      align-self: flex-end;
+    }
     &:nth-child(1){
       margin: 0 3rem 0 0;
     }
     h1 {
-      font-size: 6rem;
-      line-height: 6rem;
+      font-size: 3.8rem;
+      list-style: 3.8rem;
       font-weight: var(--font-semibold);
-      margin-bottom: 1rem;
+      margin-bottom: 0rem;
+      letter-spacing: -0.15rem;
+      @media screen and (min-width: 992px) {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 1rem;
+      }
     }
     p {
       font-family: var(--font-family-open-sans);
       font-weight: 400;
       margin: 0;
-      font-size: 2.3rem;
+      font-size: 2rem;
       color: rgba(255, 255, 255, .8);
       letter-spacing: -0.02rem;
+      @media screen and (min-width: 992px) {
+        font-size: 2.2rem;
+      }
       a {
         font-weight: 600;
         font-family: inherit;
@@ -98,6 +129,38 @@
           text-decoration: underline;
         }
       }
+    }
+    .eyes {
+      margin: 0 auto;
+      position: relative;
+      display: inline-block;
+    }
+
+    .eye {
+      display: inline-block;
+      position: absolute;
+      width: 11px;
+      height: 10px;
+      background: #717380;
+      border-radius: 50%;
+    }
+
+    .right {
+      top: 10px;
+      right: 38px;
+      animation: blink 1500ms;
+      animation-delay: 1500ms;
+      animation-iteration-count: 2;
+      animation-timing-function: ease-in-out;
+    }
+
+    .left {
+      top: 10px;
+      left: -106px;
+      animation: blink 1500ms;
+      animation-delay: 1500ms;
+      animation-iteration-count: 2;
+      animation-timing-function: ease-in-out;
     }
   }
 }
@@ -121,5 +184,26 @@
   }
   100%{
     transform: scale(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  26% {
+    opacity: 1;
+  }
+  29%{
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+  }
+  36%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
